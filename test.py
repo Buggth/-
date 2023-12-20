@@ -13,9 +13,9 @@ from model import Finetunemodel
 from multi_read_data import MemoryFriendlyLoader
 
 parser = argparse.ArgumentParser("LMR")
-parser.add_argument('--data_path', type=str, default='./data/input_100/',
+parser.add_argument('--data_path', type=str, default='./data/',
                     help='location of the data corpus')
-parser.add_argument('--save_path', type=str, default='./results/output303_7', help='location of the data corpus')
+parser.add_argument('--save_path', type=str, default='./results/', help='location of the data corpus')
 parser.add_argument('--model', type=str, default='./weights/weights_303_7.pt', help='location of the data corpus')
 parser.add_argument('--gpu', type=int, default=0, help='gpu device id')
 parser.add_argument('--seed', type=int, default=2, help='random seed')
